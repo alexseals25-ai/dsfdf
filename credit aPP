@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+      padding: 40px 36px;
+      width: 100%;
+      max-width: 400px;
+    }
+    h1 { font-size: 1.4rem; color: #111; margin-bottom: 6px; }
+    .sub { font-size: 0.875rem; color: #666; margin-bottom: 28px; }
+    label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #444;
+      margin-bottom: 6px;
+    }
+    input {
+      width: 100%;
+      padding: 11px 13px;
+      border: 1.5px solid #ddd;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      margin-bottom: 18px;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    input:focus { border-color: #2563eb; }
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #2563eb;
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    button:hover { background: #1d4ed8; }
+    button:disabled { background: #93c5fd; cursor: not-allowed; }
+  </style>
+</head>
+<body>
+  <iframe name="hidden_iframe" style="display:none;"></iframe>
+
+  <div class="card">
+    <h1>Apply for Credit</h1>
+    <p class="sub">Leave your info to get started.</p>
+
+    <form id="form" method="POST" action="https://script.google.com/macros/s/AKfycbwKciceOpZwSyIuQexC_OYAOPJVm1kbPFF2MPtuYRvRG-4_EHcPT1kNmz7VX0kYcM6D5w/exec" target="hidden_iframe">
+      <label for="first">First Name</label>
+      <input id="first" name="first" type="text" placeholder="Jane" required />
+
+      <label for="last">Last Name</label>
+      <input id="last" name="last" type="text" placeholder="Doe" required />
+
+      <label for="phone">Phone Number</label>
+      <input id="phone" name="phone" type="tel" placeholder="+1 (555) 000-0000" required />
+
+      <button type="submit" id="btn">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("form").addEventListener("submit", function() {
+      setTimeout(function() {
+        window.location.href = "https://www.hyundaiofcumming.com/getfinancing";
+      }, 1000);
+    });
+  </script>
+</body>
+</html>
